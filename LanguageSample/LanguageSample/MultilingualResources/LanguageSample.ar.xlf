@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="ar" original="LANGUAGESAMPLE/RESOURCES/APPRESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6900.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="LANGUAGESAMPLE/RESOURCES/APPRESOURCES.RESX" datatype="resx">
+        <trans-unit id="Code" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target state="translated">الرمز</target>
+        </trans-unit>
+        <trans-unit id="Icon" translate="yes" xml:space="preserve">
+          <source>Icon</source>
+          <target state="translated">الأيقونة</target>
+        </trans-unit>
+        <trans-unit id="ItemInformations" translate="yes" xml:space="preserve">
+          <source>Item Informations</source>
+          <target state="translated">معلومات البضاعه</target>
+        </trans-unit>
+        <trans-unit id="NameAr" translate="yes" xml:space="preserve">
+          <source>Arabic Name</source>
+          <target state="translated">الاسم العربي</target>
+        </trans-unit>
+        <trans-unit id="NameEn" translate="yes" xml:space="preserve">
+          <source>English Name</source>
+          <target state="translated">الاسم الانجليزي</target>
+        </trans-unit>
+        <trans-unit id="ProductCategory" translate="yes" xml:space="preserve">
+          <source>Product Category</source>
+          <target state="translated">فئة المنتج</target>
+        </trans-unit>
+        <trans-unit id="ProductCategoryImages" translate="yes" xml:space="preserve">
+          <source>Product Category Images</source>
+          <target state="translated">صور فئة المنتج</target>
+        </trans-unit>
+        <trans-unit id="Save" translate="yes" xml:space="preserve">
+          <source>Save</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">حفظ</target>
+        </trans-unit>
+        <trans-unit id="ShortNameAr" translate="yes" xml:space="preserve">
+          <source>Arabic Short Name</source>
+          <target state="translated">الاسم المختصر العربي</target>
+        </trans-unit>
+        <trans-unit id="ShortNameEn" translate="yes" xml:space="preserve">
+          <source>English Short Name</source>
+          <target state="translated">الاسم المختصر الإنجليزي</target>
+        </trans-unit>
+        <trans-unit id="ShowOnHeader" translate="yes" xml:space="preserve">
+          <source>Show on Header</source>
+          <target state="translated">اظهار على رأس الصفحة</target>
+        </trans-unit>
+        <trans-unit id="ShowOnMainPage" translate="yes" xml:space="preserve">
+          <source>Show On Main Page</source>
+          <target state="translated">عرض على الصفحة الرئيسية</target>
+        </trans-unit>
+        <trans-unit id="Title" translate="yes" xml:space="preserve">
+          <source>Add a product category</source>
+          <target state="translated">إضافة فئة المنتج</target>
+        </trans-unit>
+        <trans-unit id="ChangeLanguage" translate="yes" xml:space="preserve">
+          <source>Change Language</source>
+          <target state="translated">تغيير اللغة</target>
+        </trans-unit>
+        <trans-unit id="OtherInformations" translate="yes" xml:space="preserve">
+          <source>Other Informations</source>
+          <target state="translated">معلومات أخرى</target>
+        </trans-unit>
+        <trans-unit id="Apply" translate="yes" xml:space="preserve">
+          <source>Apply</source>
+          <target state="translated">تطبيق</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

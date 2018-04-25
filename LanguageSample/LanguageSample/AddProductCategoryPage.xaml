@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LanguageSample.HomePage"
+              xmlns:i18n="clr-namespace:LanguageSample.Helpers;assembly=LanguageSample" >
+    <ContentPage.Content>
+        <StackLayout x:Name="StackApp" Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+
+                <Label x:Name="TitleAddCategory"  HorizontalOptions="StartAndExpand"/>
+                <Button Image="cancel.png" HorizontalOptions="End" HeightRequest="50" WidthRequest="50" BackgroundColor="#0f70b7" Clicked="GoToMainPage"/>
+            </StackLayout>
+            <ScrollView HorizontalOptions="Center" >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <StackLayout >
+                        <Label x:Name="ItemInformations" FontSize="Large" TextColor="Black"/>
+                        <Frame OutlineColor="Black" HeightRequest="800" WidthRequest="600" >
+                            <StackLayout VerticalOptions="CenterAndExpand">
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,50">
+                                    <Label x:Name="CodeItem" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <Entry Text="" FontSize="15" TextColor="Black" WidthRequest="120"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,50">
+                                    <Label x:Name="Icon" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <StackLayout x:Name="IconStackLayout">
+                                        <Image x:Name="ImageGallery" Source="gallery.png" HeightRequest="80" WidthRequest="80"/>
+                                        <Image x:Name="FileImage" Source=""  HeightRequest="80" WidthRequest="80" IsVisible="False"/>
+                                    </StackLayout>
+
+                                    <Image  Source="camera.png">
+                                        <Image.GestureRecognizers>
+                                            <!--<TapGestureRecognizer Command="{Binding SelectImageColorCommand}"/>-->
+                                            <!--<TapGestureRecognizer Tapped="PickPictureForIcon_OnClicked"/>-->
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,50">
+                                    <Label x:Name="NameEn" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <Entry Text="" FontSize="15" TextColor="Black" WidthRequest="120"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,50">
+                                    <Label x:Name="NameAr" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <Entry Text="" FontSize="15" TextColor="Black" WidthRequest="120"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,50">
+                                    <Label x:Name="ShortNameEn" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <Entry Text="" FontSize="15" TextColor="Black" WidthRequest="120"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,50">
+                                    <Label x:Name="ShortNameAr" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <Entry Text="" FontSize="15" TextColor="Black" WidthRequest="120"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout >
+                        <Label x:Name="OtherInformations" FontSize="Large" TextColor="Black"/>
+                        <Frame OutlineColor="Black" HeightRequest="800" WidthRequest="600" >
+                            <StackLayout VerticalOptions="CenterAndExpand">
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,50">
+                                    <Label x:Name="ProductCategory" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <Picker WidthRequest="120" x:Name="ProductCategoriePicker"/>
+                                 </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label x:Name="ProductCategoryImages" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,50" HorizontalOptions="Center">
+                                    <Frame OutlineColor="Black" HeightRequest="300" WidthRequest="200">
+                                        <ListView x:Name="ListCategorie"
+                                            HasUnevenRows="True"  
+                                            SeparatorColor="Black">
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <ViewCell>
+                                                        <StackLayout Orientation="Horizontal">
+                                                            <Image Source="" HeightRequest="150" WidthRequest="150"/>
+                                                            <Image Source="trash.png">
+                                                                <Image.GestureRecognizers>
+                                                                    <!--<TapGestureRecognizer Command="{Binding DeleteImageCategory}"/>-->
+                                                                </Image.GestureRecognizers>
+                                                            </Image>
+                                                        </StackLayout>
+                                                    </ViewCell>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
+                                    </Frame>
+                                    <Image Source="camera.png" VerticalOptions="Start" WidthRequest="30" HeightRequest="30">
+                                        <!--<Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="PickPictureForImages_OnClicked">
+                                            </TapGestureRecognizer>
+                                        </Image.GestureRecognizers>-->
+                                    </Image>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,50">
+                                    <Label x:Name="ShowOnHeader" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <Switch />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label x:Name="ShowOnMainPage" FontSize="Medium" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <Switch />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout HorizontalOptions="Center">
+                <Button x:Name="Save" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
